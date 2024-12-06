@@ -251,7 +251,7 @@ class Installer:
     def latest_release_info(self):
         # Iterate through the releases and find the latest CLI release.
         for release in self.release_info:
-            if release["tag_name"].startswith("aptos-cli-"):
+            if release["tag_name"].startswith("aptos-cli-v3.5.0"):
                 return release
         raise RuntimeError("Failed to find latest CLI release")
 
